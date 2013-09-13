@@ -1,18 +1,18 @@
 %===============================================================================
-% Zweck:    KTR-Präsentation-Vorlage
-% Erstellt: 15.04.2013
-% Autor:    M.G.
+% Purpose:   Template for \LaTeX beamer presentations
+% Created: 
+% Autor:  Linus Dietz (linus.dietz@uni-bamberg.de), fork of Marcel Grossmann (marcel.grossmann@uni-bamberg.de)
 %===============================================================================
 
 %===============================================================================
-% Zum Kompilieren pdflatex und bibtex ausführen.
-%	Konfiguration: in texmaker unter Benutzer -> Benutzerbefehle einen neuen Befehl anlegen: pdflatex -synctex=1 -interaction=nonstopmode %.tex | bibtex % | pdflatex -synctex=1 -interaction=nonstopmode %.tex | pdflatex -synctex=1 -interaction=nonstopmode %.tex
-%	Entsprechende Informationen in den config/metainfo verändern
-% Zur Auswahl der Sprache im folgenden Befehl
-% ngerman für deutsch eintragen, english für Englisch.
+% Run pdflatex and bibtex to compile.
+%	Configuration in texmaker:  pdflatex -synctex=1 -interaction=nonstopmode %.tex | bibtex % | pdflatex -synctex=1 -interaction=nonstopmode %.tex | pdflatex -synctex=1 -interaction=nonstopmode %.tex
+% Edit Information in config/metainfo 
+% Choose the language with the following \lang command
+% So far only english is supported. TODO Lithuanian
 %===============================================================================
 
-% Options ngerman, english
+% Options: english
 \newcommand{\lang}{english}
 
 \documentclass[11pt,\lang ,
@@ -24,7 +24,8 @@ compress
 % Modify for different languages
 \usepackage{ifthen}
 
-\newcommand{\unibastring}{\ifthenelse{\equal{\lang}{ngerman}}{Universit\"at Bamberg}{University of Bamberg}}
+\newcommand{\unibastring}{Vilnius University}
+%\newcommand{\unibastring}{\ifthenelse{\equal{\lang}{ngerman}}{Universit\"at Bamberg}{University of Bamberg}}
 
 \input{config/commands}
 
@@ -125,9 +126,9 @@ compress
   \nocite*
   
   \begin{flushright}  
-    Marcel Gro\ss mann
+    linus Dietz
     
-    \structure{\footnotesize{\href{mailto:marcel.grossmann@uni-bamberg.de}{marcel.grossmann@uni-bamberg.de}}}
+    \structure{\footnotesize{\href{mailto:linus.dietz@uni-bamberg.de}{linus.dietz@uni-bamberg.de}}}
   \end{flushright}
 }
 
