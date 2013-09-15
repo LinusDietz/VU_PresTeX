@@ -32,6 +32,7 @@ To Do
 
 * Lithuanian language support
 * Consistent English comments
+* Contact me for any bugs, inconsistencies or issues of unesthetic design
 
 Thanks to
 -------------------------
