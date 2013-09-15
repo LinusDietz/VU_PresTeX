@@ -1,12 +1,12 @@
-PresTeX VU
+PresTeX VU (beta)
 =======
 
-A LaTeX Beamer template for presentations at Vilnius Universiy
+A LaTeX Beamer template for presentations at Vilnius Universiy.
 
 Setup
 -----
 
-Furthermore, edit the <code>config/metainfo.tex</code> file to include
+Edit the <code>config/metainfo.tex</code> file to include
 * your name,
 * the title and subtitle of your presentation and 
 * the presentation date.
@@ -24,8 +24,15 @@ If you prefer the command line you can comfortably run the <code>make</code> scr
 Dependencies
 -------------------------
 
-Your favourite and updated LaTeX compiler
+* Your favourite and up-to-date LaTeX compiler. 
+* Optional: GNU Make for the compile script.
+
+To Do
+-------------------------
+
+* Lithuanian language support
+* Consistent English comments
 
 Thanks to
 -------------------------
-Marcel Grossmann who initially created the PresTeX template for the Univerity of Bamberg. https://github.com/uniba-ktr/PresTeX
+Marcel Grossmann who initially created the PresTeX template at Univerity of Bamberg. https://github.com/uniba-ktr/PresTeX
