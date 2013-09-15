@@ -35,4 +35,4 @@ To Do
 
 Thanks to
 -------------------------
-Marcel Grossmann who initially created the PresTeX template at Univerity of Bamberg. https://github.com/uniba-ktr/PresTeX
+Marcel Grossmann, who initially created the PresTeX template at Univerity of Bamberg. https://github.com/uniba-ktr/PresTeX
