@@ -8,10 +8,10 @@ presentation.pdf:  $(TEXFILES)
 	bibtex presentation 
 	pdflatex presentation 
 	pdflatex presentation
-	rm *.aux *.bbl *.blg *.log *.toc *.out
+	rm *.aux *.bbl *.blg *.log *.toc *.out *.nav *.snm
 
 
 clean:
-	rm *.aux *.bbl *.blg *.log *.toc *.out presentation.pdf
+	rm *.aux *.bbl *.blg *.log *.toc *.out *.nav *.snm presentation.pdf
 
 
