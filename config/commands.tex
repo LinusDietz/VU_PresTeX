@@ -24,15 +24,14 @@
 % Without navigation symbols
 \beamertemplatenavigationsymbolsempty
 
-%% Formatierungen
+%% Formatting
 \usepackage{url}
-\usepackage{latexsym}			% schönere Symbole
+\usepackage{latexsym}			% fancy symbols
 \usepackage{color}
 %\usepackage{float}
 
-%% Zeichensätze
+%% Encoding, Symbols
 \usepackage[utf8]{inputenc}
-\usepackage[iso]{umlaute}
 \usepackage{lmodern}
 \usepackage{float}
 \usepackage{thumbpdf}
@@ -55,8 +54,9 @@
 %% Now actually use the newly defined style.
 \urlstyle{leo}
 
-%% Sprache
-\ifthenelse{\equal{\lang}{ngerman}}{\usepackage[german,ngerman]{babel}}{\usepackage[\lang]{babel}}
+%% Internationalisation
+\ifthenelse{\equal{\lang}{lithuanian}}{\usepackage[lithuanian]{babel}%
+\usepackage[L7x]{fontenc}}{\usepackage[\lang]{babel}}
 %\mode<presentation>{
 %% XXX without this the number does not appear
 %\AtBeginDocument{\def\figurename{{\scshape Fig.~\thefigure}}}
@@ -69,19 +69,17 @@
 \usepackage{amssymb,amsthm,amsfonts}
 \usepackage{dsfont}
 \usepackage[nice]{nicefrac}
-\usepackage{cancel}  %%druchstreichen von Formeln
-%
-%% Programmieren mit Latex
-\usepackage{ifthen}
+\usepackage{cancel}  
 
 
-\usepackage{dirtree}   %setzen von baumstrukturen
 
-%%%   Fuer anspruchsvolle Tabellen   %%
+\usepackage{dirtree}   % tree structures
+
+%%%   For advanced tables   %%
 \usepackage{longtable, colortbl}
 \usepackage{multicol, multirow}
 %
-%%%  Für Grafiken %%
+%%%  For graphics %%
 \usepackage{graphicx}
 \usepackage{tikz}
 %\usepackage{pgfplots}
@@ -89,19 +87,16 @@
 \usepackage[font=footnotesize]{subfig}
 %\usepackage{fp}
 %
-%%%  Zur Darstellung des Euro-Symbols   %%
-%\usepackage{eurosym, wasysym}
-%\selectlanguage{german}
+
 %
-%%%   Fuer Bibtex nach APA Style (American Psychology Association)   %%
+%%%   For Bibtex with APA Style (American Psychology Association)   %%
 %\usepackage[numbers]{natbib}
 \usebibitemtemplate{\insertbiblabel}
 
-%% Code-Hervorhebung
-%% Quellcode
+
 
 %\usepackage[numbered,autolinebreaks,useliterate]{mcode}
-%\usepackage{verbatim}            % Quellcode einbinden (\verbatiminput) standardpaket
+%\usepackage{verbatim}            % include verbatim  (\verbatiminput) standardpaket
 %\usepackage{moreverb} 
 %% PseudoCode
 %\usepackage{algorithm}
@@ -128,10 +123,10 @@
 %%%                                   COMMAND SETUP                                       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%#1 Breite
-%#2 Datei (liegt im image Verzeichnis)
-%#3 Beschriftung
-%#4 Label fuer Referenzierung
+%#1 Width
+%#2 Filename in the ./image directory
+%#3 Caption
+%#4 Label for referencing
 \newcommand{\image}[4]{
 \begin{figure}[H]
 \centering
@@ -141,6 +136,7 @@
 \end{figure}
 }
 
+% WARNING: Experimantal.
 % #1 videofile
 % #2 scalefactor
 \newcommand{\video}[2]{%

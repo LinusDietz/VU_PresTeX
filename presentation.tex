@@ -13,20 +13,18 @@
 % So far only english is supported. TODO: Lithuanian
 %===============================================================================
 
-% Options: english
-\newcommand{\lang}{english}
+% Options: english || lithuanian
+\newcommand{\lang}{lithuanian}
 
 \documentclass[11pt,\lang ,
 %draft,
 %handout,
 compress
 ]{beamer}
-% Für den Header
-% Modify for different languages
+
 \usepackage{ifthen}
 
-\newcommand{\unibastring}{Vilnius University}
-%\newcommand{\unibastring}{\ifthenelse{\equal{\lang}{ngerman}}{Universit\"at Bamberg}{University of Bamberg}}
+\newcommand{\univustring}{\ifthenelse{\equal{\lang}{lithuanian}}{Vilniaus Universitetas}{Vilnius University}}
 
 \input{config/commands}
 
@@ -122,7 +120,7 @@ If you want a 2 column layout, use the \texttt{multicols} environment:
 \begin{frame}
 \frametitle{Basic Commands}
 \framesubtitle{Images}
-\image{.4\textwidth}{logo.png}{MIF-Logo}{img:logo}
+\image{.4\textwidth}{logo.png}{University Logo}{img:logo}
 
 Images can be included as usual -- or with the \texttt{\textbackslash image} command.
 \end{frame}
@@ -169,7 +167,7 @@ References can be used with the \texttt{BibTeX} commands  \cite{Knuth.1986}. The
 %% Last frame
 \frame{
   \vspace{2cm}
-  {\huge Questions ?}
+ \ifthenelse{\equal{\lang}{lithuanian}}{{\huge Klausimai?}}{\huge Questions ?}
 
   \vspace{20mm}
   \nocite*

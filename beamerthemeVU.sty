@@ -1,4 +1,3 @@
-%Berkeley / Goettingen / Hannover / Marburg / PaloAlto / Rochester
 \usetheme{Rochester}
 
 \RequirePackage{pgf}
@@ -171,8 +170,11 @@
 
 \beamer@headheight=0.13\paperwidth
 
-\definecolor{univuredI}{HTML}{AC1413}
-\definecolor{univugreyI}{HTML}{00477F}
+
+\definecolor{univuredI}{HTML}{891C2E}
+\definecolor{univuochreI}{HTML}{A48200}
+\definecolor{univugreyI}{HTML}{C5C5C5}
+\definecolor{univuyellowI}{HTML}{F2E39B}
 
 
 
@@ -214,9 +216,9 @@
 
 
 \setbeamercolor*{Title bar}{fg=white}
-\setbeamercolor*{Location bar}{fg=univuredI,bg=unibagrayV}
+\setbeamercolor*{Location bar}{fg=univuredI,bg=univugreyI}
 \setbeamercolor*{frametitle}{parent=Title bar}
-\setbeamercolor*{block title}{bg=univugreyI,fg=white}
+\setbeamercolor*{block title}{bg=univuochreI,fg=white}
 \setbeamercolor*{block body}{bg=unibagrayV,fg=black}
 \setbeamercolor*{block title alerted}{bg=nounibaredII,fg=white}
 \setbeamercolor*{block body alerted}{bg=unibaredV,fg=black}
@@ -225,9 +227,9 @@
 \setbeamercolor*{normal text}{bg=white,fg=black}
 \setbeamercolor*{alerted text}{fg=nounibaredII}
 \setbeamercolor*{section in head/foot}{bg=univuredI,fg=white}
-\setbeamercolor*{item}{fg=univuredI, bg=unibagrayV}
+\setbeamercolor*{item}{fg=univuredI, bg=univugreyI}
 
-\usecolortheme[named=univugreyI]{structure}
+\usecolortheme[named=univuochreI]{structure}
 
 \setbeamerfont{section in head/foot}{size=\tiny,series=\normalfont}
 \setbeamerfont{frametitle}{size=\large}
@@ -259,7 +261,7 @@ anchor=south west,
   rectangle with rounded corners south east=0pt,
 ] at (0,0) (b) {};
 \draw (b.east) +(-.7em,0) node(logo) [anchor=east]   { \pgfuseimage{uniheader} };
-\draw[white] node(uniba) [left of=logo, anchor=east]{\scriptsize\unibastring};
+\draw[white] node(uniba) [left of=logo, anchor=east]{\scriptsize\univustring};
 \end{tikzpicture}
 
   \vskip -1.75cm

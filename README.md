@@ -1,10 +1,12 @@
 PresTeX VU (beta)
 =======
 
-A LaTeX Beamer template for presentations at Vilnius Universiy.
+A LaTeX Beamer template for presentations at Vilnius Universiy. Both English and Lithuanian languages are supported
 
 Setup
 -----
+
+Set the language in the <code>presentation.tex</code> file.
 
 Edit the <code>config/metainfo.tex</code> file to include
 * your name,
@@ -30,9 +32,8 @@ Dependencies
 To Do
 -------------------------
 
-* Lithuanian language support
-* Consistent English comments
-* Contact me for any bugs, inconsistencies or issues of unesthetic design
+* Lithuanian language support for the bibliography
+* Contact me for any bugs, inconsistencies or issues of unesthetic design [linus.dietz@uni-bamberg.de](mailto:linus.dietz@uni-bamberg.de)
 
 Thanks to
 -------------------------
