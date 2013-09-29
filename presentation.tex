@@ -1,25 +1,24 @@
 %===============================================================================
-% Purpose:   Template for \LaTeX beamer presentations
-% Created: 
+% Purpose:   Template for \LaTeX beamer presentations at Vilnius University
+% Created: Sep 15 2013
 % Autor:  Linus Dietz (linus.dietz@uni-bamberg.de), fork of Marcel Grossmann (marcel.grossmann@uni-bamberg.de)
 %===============================================================================
 
 
 %===============================================================================
-% Run pdflatex and bibtex to compile.
+% Run pdflatex and bibtex to compile. Use the Makefile for all in once compilation.
 %	Configuration in texmaker:  pdflatex -synctex=1 -interaction=nonstopmode %.tex | bibtex % | pdflatex -synctex=1 -interaction=nonstopmode %.tex | pdflatex -synctex=1 -interaction=nonstopmode %.tex
 % Edit Information in config/metainfo 
 % Choose the language with the following \lang command
-% So far only english is supported. TODO: Lithuanian
+% Options: {english || lithuanian}
+\newcommand{\lang}{lithuanian}
 %===============================================================================
 
-% Options: english || lithuanian
-\newcommand{\lang}{lithuanian}
 
-\documentclass[11pt,\lang ,
+\documentclass[11pt,\lang ,%
 %draft,
 %handout,
-compress
+compress%
 ]{beamer}
 
 \usepackage{ifthen}
@@ -84,6 +83,7 @@ compress
 \begin{frame}{Content}
 \tableofcontents
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Content starts here %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,8 +153,9 @@ References can be used with the \texttt{BibTeX} commands  \cite{Knuth.1986}. The
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%% References          %%%%%%%%%%
+%%%%%%%%%%       References      %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section*{}
 \begin{frame}[allowframebreaks]{References}
 \def\newblock{\hskip .11em plus .33em minus .07em}
