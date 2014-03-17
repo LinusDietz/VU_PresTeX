@@ -1,7 +1,7 @@
-PresTeX VU (beta)
+PresTeX VU
 =======
 
-A LaTeX Beamer template for presentations at Vilnius Universiy. Both English and Lithuanian languages are supported
+A LaTeX Beamer template for presentations at Vilnius Universiy. Both English and Lithuanian languages are supported.
 
 Setup
 -----
@@ -17,7 +17,7 @@ Compiling the Source Code
 -------------------------
 
 Use `pdflatex` and `bibtex` to generate a presentation.
-If you use texmaker, you can include the following command to automatically compile the sources: 
+If you use [http://www.xm1math.net/texmaker/](Texmaker), you can include the following command to automatically compile the sources: 
 <code>pdflatex -synctex=1 -interaction=nonstopmode %.tex | bibtex % | pdflatex -synctex=1 -interaction=nonstopmode %.tex 
 | pdflatex -synctex=1 -interaction=nonstopmode %.tex</code>
 
@@ -32,9 +32,10 @@ Dependencies
 To Do
 -------------------------
 
-* Lithuanian language support for the bibliography
-* Contact me for any bugs, inconsistencies or issues of unesthetic design [linus.dietz@uni-bamberg.de](mailto:linus.dietz@uni-bamberg.de)
+* I consider this template as ready to use.
+* Lithuanian language support for the bibliography.
+* Anyways contact me for bugs, inconsistencies or issues of unaesthetic design [linus.dietz@uni-bamberg.de](mailto:linus.dietz@uni-bamberg.de).
 
 Thanks to
 -------------------------
-Marcel Grossmann, who initially created the PresTeX template at Univerity of Bamberg. https://github.com/uniba-ktr/PresTeX
+Marcel Grossmann, who initially created the PresTeX template at University of Bamberg. https://github.com/uniba-ktr/PresTeX

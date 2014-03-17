@@ -1,6 +1,6 @@
 %===============================================================================
 % Purpose:   Template for \LaTeX beamer presentations at Vilnius University
-% Created: Sep 15 2013
+% Created: Sep 15 2013, Version 1.0 from Mar 17 2013
 % Autor:  Linus Dietz (linus.dietz@uni-bamberg.de), fork of Marcel Grossmann (marcel.grossmann@uni-bamberg.de)
 %===============================================================================
 
@@ -46,14 +46,14 @@ compress%
 
 \frame{\titlepage}
 
-%\AtBeginSection[]
-%{
-%  \frame<handout:0>
-%  {
-%    \frametitle{Outline}
-%    \tableofcontents[currentsection,hideallsubsections]
-%  }
-%}
+\AtBeginSection[]
+{
+  \frame<handout:0>
+  {
+    \frametitle{Outline}
+    \tableofcontents[currentsection,hideallsubsections]
+  }
+}
 
 \AtBeginSubsection[]
 {
@@ -120,7 +120,7 @@ If you want a 2 column layout, use the \texttt{multicols} environment:
 \begin{frame}
 \frametitle{Basic Commands}
 \framesubtitle{Images}
-\image{.4\textwidth}{logo.png}{University Logo}{img:logo}
+\image{.4}{logo.png}{Vilnius University Logo}{img:logo}
 
 Images can be included as usual -- or with the \texttt{\textbackslash image} command.
 \end{frame}

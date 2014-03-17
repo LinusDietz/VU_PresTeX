@@ -31,10 +31,9 @@
 %\usepackage{float}
 
 %% Encoding, Symbols
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage{lmodern}
 \usepackage{float}
-\usepackage{thumbpdf}
 \usepackage{wasysym}
 \usepackage{ucs}
 
@@ -81,9 +80,10 @@
 %
 %%%  For graphics %%
 \usepackage{graphicx}
+\usepackage{pgf}
 \usepackage{tikz}
 %\usepackage{pgfplots}
-\usetikzlibrary{calc,arrows,fit,positioning,trees,snakes,backgrounds,shadows,decorations,decorations.markings,decorations.shapes,shapes,patterns,fadings}
+\usetikzlibrary{calc,arrows,automata,fit,positioning,trees,backgrounds,shadows,decorations,decorations.markings,decorations.shapes,shapes,patterns,fadings}
 \usepackage[font=footnotesize]{subfig}
 %\usepackage{fp}
 %
@@ -123,21 +123,21 @@
 %%%                                   COMMAND SETUP                                       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%#1 Width
+%#1 Relative width
 %#2 Filename in the ./image directory
 %#3 Caption
 %#4 Label for referencing
 \newcommand{\image}[4]{
 \begin{figure}[H]
 \centering
-\includegraphics[width=#1]{image/#2}
+\includegraphics[width=#1\textwidth]{image/#2}
 \caption{\footnotesize{#3}}
 \label{#4}
 \end{figure}
 }
 
 % WARNING: Experimantal.
-% #1 videofile
+% #1 videofile in the ./image directory
 % #2 scalefactor
 \newcommand{\video}[2]{%
-\includemovie[text={\includegraphics[scale=#2]{praesi/video/#1.png}}, autoplay, mouse=true, repeat=1]{}{}{praesi/video/#1.swf}}
+\includemovie[text={\includegraphics[scale=#2]{image/#1.png}}, autoplay, mouse=true, repeat=1]{}{}{image/#1.swf}}
