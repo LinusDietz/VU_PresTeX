@@ -17,7 +17,7 @@ Compiling the Source Code
 -------------------------
 
 Use `pdflatex` and `bibtex` to generate a presentation.
-If you use [http://www.xm1math.net/texmaker/](Texmaker), you can include the following command to automatically compile the sources: 
+If you use [Texmaker](http://www.xm1math.net/texmaker/), you can include the following command to automatically compile the sources: 
 <code>pdflatex -synctex=1 -interaction=nonstopmode %.tex | bibtex % | pdflatex -synctex=1 -interaction=nonstopmode %.tex 
 | pdflatex -synctex=1 -interaction=nonstopmode %.tex</code>
 
